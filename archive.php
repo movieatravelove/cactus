@@ -3,7 +3,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
 ?>
     <body>
-        <div class="content index width mx-auto px3 my4">
+        <div class="content index width-index mx-auto px3 my4">
             <header id="header">
 			<?php $today = today(); ?>
                 <a href="<?php $this->options->siteUrl();?>">

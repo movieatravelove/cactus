@@ -98,7 +98,7 @@ $uid = $this->user->uid;
                                 <time datetime="<?php $this->date(); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
                             </div>
                             <span>
-                                <a href="<?php $this->permalink() ?>"><?php $this->sticky(38,'...'); $this->title(38,'...') ?></a>
+                                <a href="<?php $this->permalink() ?>"><?php $this->sticky(50,'...'); $this->title(50,'...') ?></a>
                             </span>
                         </li>
 					 <?php endwhile; ?>

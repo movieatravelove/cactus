@@ -29,7 +29,6 @@ $this->need('header.php');
                     </ul>
                 </div>
             </header>
-        <div class="content index width mx-auto px3 my3">
             <section id="wrapper" class="home">
                 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
                    
@@ -39,6 +38,5 @@ $this->need('header.php');
                 </article>
                  <?php $this->need('comments.php'); ?>
             </section>
-        </div>
 		</div>
  <?php $this->need('footer.php'); ?>

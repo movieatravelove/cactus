@@ -35,13 +35,13 @@ function themeConfig($form) {
         array('able' => _t('启用'),
             'disable' => _t('禁止'),
         ),
-        'disable', _t('文章目录设置'), _t('默认显示随机文章，启用则显示文章目录'));
+        'able', _t('文章目录设置'), _t('默认显示随机文章，启用则显示文章目录'));
     $form->addInput($catalog);
 	$Emoji = new Typecho_Widget_Helper_Form_Element_Radio('Emoji',
         array('able' => _t('启用'),
             'disable' => _t('禁止'),
         ),
-        'disable', _t('Emoji表情设置'), _t('默认显示Emoji表情，如果你的数据库charset配置不是utf8mb4请禁用'));
+        'able', _t('Emoji表情设置'), _t('默认显示Emoji表情，如果你的数据库charset配置不是utf8mb4请禁用'));
     $form->addInput($Emoji);
 }
 
@@ -511,6 +511,7 @@ function spam_protection_pre($comment, $post, $result){
     return $comment;
 }
 
+
 /**
 * 获取扇贝单词每日一句
 */
@@ -532,3 +533,6 @@ function today(){
     $coverstory = json_decode(file_get_contents($coverstory),true);
     return $coverstory;
 }
+
+
+

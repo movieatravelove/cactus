@@ -119,7 +119,7 @@ $this->need('header.php');
                 </div>
             </span>
         </div>
-        <div class="content index width mx-auto px3 my3">
+        <div class="content index width-page mx-auto px3 my3">
             <section id="wrapper" class="home">
                 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
                     <header>

@@ -51,7 +51,7 @@ a{-webkit-tap-highlight-color:transparent}
 .mr4,.mx4{margin-right:4rem}
 .mt4,.my4{margin-top:4rem}
 .mb4,.my4{margin-bottom:4rem}
-.my5{margin-top:7rem}
+.my5{margin-top:3rem}
 .m4{margin:4rem}
 .mxn1{margin-left:-.5rem;margin-right:-.5rem}
 .mxn2{margin-left:-1rem;margin-right:-1rem}
@@ -118,7 +118,8 @@ body{color:#c9cacc;background-color:#1d1f21;font-size:14px;font-weight:400;text-
 .image-wrap p{flex:1 0 65%}
 }
 #header #nav ul li:last-child,#header #nav ul li:last-child a,#header-post #nav ul li:last-child a,#header-post ul li:last-child{margin-right:0}
-.width{width:100%;max-width:39rem}
+.width-page{width:100%;max-width:60rem}
+.width{width:100%;max-width:48rem}
 @media (max-width:480px){pre .line{-webkit-text-size-adjust:none}
 .px3{padding-left:1.1rem;padding-right:1.1rem}
 .my4{margin-top:2rem;margin-bottom:2rem}
@@ -209,14 +210,15 @@ body{color:#c9cacc;background-color:#1d1f21;font-size:14px;font-weight:400;text-
 .post-list{padding:0}
 .post-list .post-item{list-style-type:none;margin-left:0;margin-bottom:1rem}
 .post-list .post-item .meta{display:block;font-size:14px;color:#666;min-width:100px;margin-right:16px}
-.description{min-height:105px}
+.description{min-height:115px}
 @media (min-width:480px){p{text-align:justify}
 .post-list .post-item{display:flex;margin-bottom:5px}
 .post-list .post-item .meta{text-align:left}
 }
 .project-list .project-item{margin-bottom:5px}
-article header .posttitle{margin-top:0;margin-bottom:0;text-transform:none;font-size:1.5em;line-height:1.25}
-article header .meta{margin-top:0;margin-bottom:1rem}
+article header {margin-bottom: 2.6em}
+article header .posttitle{margin-top:0;margin-bottom:0;text-transform:none;font-size:2em;line-height:1.25}
+article header .meta{margin-top:1rem;margin-bottom:1rem}
 article header .meta *{color:#ccc;font-size:.85rem}
 article header .author{text-transform:uppercase;letter-spacing:.01em;font-weight:700}
 article header .postdate{display:inline}
@@ -272,9 +274,11 @@ article .content .caption{color:color-grey;display:block;font-size:.9em;margin-t
 #footer li:last-child a{margin-right:0}
 #footer a:hover{color:#999}
 #footer .footer-left{height:20px;line-height:25px;vertical-align:middle}
-@media (min-width:39rem){#footer{padding-top:20px;padding-bottom:20px}
+#footer .footer-beian{height:20px;line-height:35px;vertical-align:middle}
+@media (min-width:39rem){#footer{padding-top:20px;padding-bottom:50px}
 #footer .footer-left{float:left}
 #footer .footer-right{float:right}
+#footer .footer-beian{float:left}
 }
 .pagination{display:inline-block;margin-top:2rem}
 .pagination .page-number{color:#1abc9c;}

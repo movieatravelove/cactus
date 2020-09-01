@@ -2,7 +2,7 @@
 <div class="mx-auto px3 my5">
  <footer id="footer" style="display:block;">
             <div class="footer-left">
-                Copyright © <?php echo date('Y'); ?> By <a href="http://www.typecho.org" target="_blank" rel="nofollow">Typecho</a> & <a href="http://www.xde.io" target="_blank">Xingr</a> <?php if($this->options->beian): ?><a href="http://www.beian.miit.gov.cn/"><?php $this->options->beian();?></a><?php endif; ?>
+                Copyright © <?php echo date('Y'); ?> By <a href="http://www.typecho.org" target="_blank" rel="nofollow">Typecho</a> & <a href="https://github.com/Seevil/cactus.git" target="_blank">Cactus</a> & <a href="https://github.com/movieatravelove" target="_blank">March21Sunny</a> 
             </div>
             <div class="footer-right">
                 <nav>
@@ -17,6 +17,9 @@
                     </ul>
                 </nav>
             </div>
+			 <div class="footer-beian">
+                <?php if($this->options->beian): ?><a href="http://www.beian.miit.gov.cn/"><?php $this->options->beian();?></a><?php endif; ?>
+            </div>
         </footer>
 		</div>
 		<link rel="stylesheet" href="<?php $this->options->themeUrl('lib/font-awesome/css/font-awesome.min.css'); ?>">
@@ -25,29 +28,31 @@
 		<script src="<?php $this->options->themeUrl('lib/typed.js'); ?>"></script>
 		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 		<script>	
-$(function () {
-  $.get("<?php $this->options->siteUrl();?><?php echo date('Ymd').'.json';?>", function (data) {
-    var data = data.data;
-    // var str =  data.content+'\n'
-    // + data.translation+"\n---- "
-    // +data.author +'\n'
-    var str =  data.content+'\n'
-    + data.translation+"\n---- "
-    
-    var options = {
-      strings: [ 
-        str + "Who??^1000",
-        str + "It's me^2000",
-        str +'Haha, make a joke',
-        str +data.author,
-      ],
-      typeSpeed: 20,
-      startDelay:300,
-      // loop: true,
-    }
-    var typed = new Typed(".description .typed", options);
-  })
-});</script>
+			$(function () {
+			  // $.get("<?php $this->options->siteUrl();?><?php echo date('Ymd').'.json';?>", function (data) {
+			  $.get("<?php $this->options->siteUrl();?><?php echo '20200901.json';?>", function (data) {
+				var data = data.data;
+				// var str =  data.content+'\n'
+				// + data.translation+"\n---- "
+				// +data.author +'\n'
+				var str =  data.content+'\n'
+				+ data.translation+"\n---- "
+				
+				var options = {
+				  strings: [ 
+					str + "Who??^1000",
+					str + "It's me^2000",
+					str +'Haha, make a joke',
+					str +data.author,
+				  ],
+				  typeSpeed: 20,
+				  startDelay:300,
+				  // loop: true,
+				}
+				var typed = new Typed(".description .typed", options);
+			  })
+			});
+		</script>
 		<?php endif; ?>
 		<?php if ($this->is('post') || $this->is('page'))  : ?>
 		<link rel="stylesheet" href="<?php $this->options->themeUrl('css/lightbox.min.css'); ?>">
