@@ -19,5 +19,5 @@ forked from [Seevil/cactus](https://github.com/Seevil/cactus)
 
 * 修改内容页宽度
 * 文章标题显示长度
-* 首页每日一句
+* 修改首页每日一句
 
