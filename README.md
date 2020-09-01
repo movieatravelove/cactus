@@ -11,30 +11,13 @@
 
 版本：1.3.0
 
-咕咕咕了很久这次把能更新的全安排上了
+forked from [Seevil/cactus](https://github.com/Seevil/cactus)
 
-添加 搜索功能、表情功能、文章置顶、备案号设置 一些其他修复优化
+---
 
+自定义样式
 
-演示图片：
-首页：![image](https://user-images.githubusercontent.com/7334510/53931080-ae1baa00-40ce-11e9-8639-3d78f7692cd7.png)
+* 修改内容页宽度
+* 文章标题显示长度
+* 首页每日一句
 
-文章页：
-
-![1057402836](https://user-images.githubusercontent.com/7334510/53931207-3bf79500-40cf-11e9-85f8-5a1b7707eaa3.png)
-
-
-归档页：
-
-![image](https://user-images.githubusercontent.com/7334510/53931223-56317300-40cf-11e9-9c90-f381783bc21e.png)
-
-
-----
-欢迎Star
-
-如果觉得我移植的主题还不错可以支持一下呀~
-
-![13341032392](https://user-images.githubusercontent.com/7334510/53933535-bb8a6180-40d9-11e9-9231-bd02aaca688f.png)
-
-  [1]: https://github.com/probberechts/hexo-theme-cactus
-  [2]: https://alili.tech/
