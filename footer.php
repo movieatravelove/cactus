@@ -1,9 +1,10 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="mx-auto px3 my5">
- <footer id="footer" style="display:block;">
+		<footer id="footer" style="display:block;">
             <div class="footer-left">
-                Copyright © <?php echo date('Y'); ?> By <a href="http://www.typecho.org" target="_blank" rel="nofollow">Typecho</a> & <a href="https://github.com/Seevil/cactus.git" target="_blank">Cactus</a> & <a href="https://github.com/movieatravelove" target="_blank">March21Sunny</a> 
+                Copyright © <?php echo date('Y'); ?> By <a href="http://www.typecho.org" target="_blank" rel="nofollow">Typecho</a> & <a href="https://github.com/Seevil/cactus.git" target="_blank">Cactus</a> & <a href="https://github.com/movieatravelove" target="_blank">March21Sunny</a> <?php if($this->options->beian): ?><a href="http://www.beian.miit.gov.cn/" target="_blank"><?php $this->options->beian();?></a><?php endif; ?> 
             </div>
+			<!--
             <div class="footer-right">
                 <nav>
                     <ul>
@@ -20,6 +21,7 @@
 			 <div class="footer-beian">
                 <?php if($this->options->beian): ?><a href="http://www.beian.miit.gov.cn/"><?php $this->options->beian();?></a><?php endif; ?>
             </div>
+			-->
         </footer>
 		</div>
 		<link rel="stylesheet" href="<?php $this->options->themeUrl('lib/font-awesome/css/font-awesome.min.css'); ?>">

@@ -59,11 +59,18 @@ $uid = $this->user->uid;
                             <a href="<?php $this->options->siteUrl();?>">Home</a>
                         </li>
                         <?php $this->widget('Widget_Contents_Page_List')->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
-                        <?php if($this->options->github): ?>
+						<li>
+                            <a href="http://139.155.83.207:81/" target="_blank">Nav</a>
+                        </li>
+						<li>
+                            <a href="http://139.155.83.207:82/" target="_blank">Photo</a>
+                        </li>
+						<!--
+						<?php if($this->options->github): ?>
 						<li>
                          <a href="<?php $this->options->github();?>" target="_blank">Github</a>
                         </li><?php endif; ?>
-						
+						-->
                     </ul>
                 </div>
             </header>
