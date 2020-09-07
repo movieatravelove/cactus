@@ -134,11 +134,15 @@ $this->need('header.php');
                                     <span><?php Postviews($this); ?></span>
                                 </span>
                             </div>
-                            <div class="article-tag">
+							<div class="article-tag">
+                                <i class="fa fa-font"></i>
+                                <?php $this->charactersNum(); ?>
+                            </div>
+							<div class="article-tag">
                                 <i class="fa fa-tag"></i>
                                 <?php $this->category(' '); ?>
                             </div>
-                            <div class="article-tag-box"></div>
+							<div class="article-tag-box"></div>
                         </div>
                     </header>
                     <div class="content" itemprop="articleBody" id="post-content">

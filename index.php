@@ -86,6 +86,11 @@ $uid = $this->user->uid;
                                 <span id="busuanzi_value_site_pv">0</span>
                             </span>
                         </span>
+						| 
+						 <span>
+                            <i class="fa fa-font"></i>
+                            <?php WordsCounter_Plugin::allOfCharacters(); ?>
+                        </span>
                         | Find me on
                     </p>
                     <ul id="sociallinks">

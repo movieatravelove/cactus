@@ -50,7 +50,7 @@ $this->need('header.php');
                                 <time datetime="<?php $this->date(); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
                             </div>
                             <span>
-                                <a href="<?php $this->permalink() ?>"><?php $this->title(38,'...') ?></a>
+                                <a href="<?php $this->permalink() ?>"><?php $this->title(50,'...') ?></a>
                             </span>
                         </li>
 					 <?php endwhile; ?>

@@ -29,6 +29,7 @@ $this->need('header.php');
                     </ul>
                 </div>
             </header>
+			<h1>Tags</h1>
             <div id="theme-tagcloud" class="tagcloud-wrap">
 			<?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
 			<?php while($tags->next()): ?>
