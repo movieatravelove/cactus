@@ -16,7 +16,7 @@ forked from [Seevil/cactus](https://github.com/Seevil/cactus)
 
 - 修改文章标题显示长度
 
-- 修改首页每日一句
+- 修改首页每日一句（footer.php、functions.php）
 
 - 增加文章字数统计 **[ Typecho_WordsCounter](https://github.com/elatisy/Typecho_WordsCounter)**
 
