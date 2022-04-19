@@ -544,8 +544,10 @@ function today()
         "verify_peer_name" => false,
       ]
     ];
-    $json = file_get_contents("compress.zlib://" . 'https://rest.shanbay.com/api/v2/quote/quotes/today/', false, stream_context_create($stream_opts));
-    @file_put_contents($coverstory, $json); //写入文本
+    // $json = file_get_contents("compress.zlib://" . 'https://rest.shanbay.com/api/v2/quote/quotes/today/', false, stream_context_create($stream_opts));
+    // 一言 https://developer.hitokoto.cn/
+    $json = file_get_contents("compress.zlib://" . 'https://v1.hitokoto.cn/?c=d&c=j&c=k', false, stream_context_create($stream_opts));
+    @file_put_contents($coverstory, $json); //写入文本（注意写入权限）
   }
   $coverstory = json_decode(file_get_contents($coverstory), true);
   return $coverstory;
