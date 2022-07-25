@@ -31,6 +31,9 @@ function themeConfig($form)
   $form->addInput($sticky);
   $Projects = new Typecho_Widget_Helper_Form_Element_Textarea('Projects', NULL, NULL, _t('首页 Projects 作品链接 设置（注意：切换主题会被清空，注意备份！）'), _t('按照格式输入链接信息，格式：<br><strong>链接名称（必须）|链接地址（必须）|链接描述</strong><br>不同信息之间用英文竖线“|”分隔，例如：<br><strong>XDE|http://www.xde.io/|仙岛驿站</strong><br>若中间有暂时不想填的信息，请留空，例如暂时不想填写链接描述：<br><strong>XDE|http://www.xde.io||</strong><br>多个链接换行即可，一行一个'));
   $form->addInput($Projects);
+  // 自定义导航
+  $Navs = new Typecho_Widget_Helper_Form_Element_Textarea('Navs', NULL, NULL, _t('首页自定义导航'), _t('按照格式输入链接信息，格式：<br><strong>链接名称（必须）|链接地址（必须）</strong><br>不同信息之间用英文竖线“|”分隔，例如：<br><strong>仙岛驿站|http://www.xde.io/|</strong>'));
+  $form->addInput($Navs);
 
   $catalog = new Typecho_Widget_Helper_Form_Element_Radio(
     'catalog',
@@ -75,6 +78,23 @@ function parseContent($obj)
   }
   $obj->content = preg_replace("/<a href=\"([^\"]*)\">/i", "<a href=\"\\1\" target=\"_blank\" rel=\"nofollow\">", $obj->content); //新标签页打开连接
   echo trim($obj->content);
+}
+
+/**自定义导航
+<?php Projects(); ?>
+ */
+function Navs($sorts = NULL)
+{
+  $options = Typecho_Widget::widget('Widget_Options');
+  $Project = NULL;
+  if ($options->Navs) {
+    $list = explode("\r\n", $options->Navs);
+    foreach ($list as $val) {
+      list($name, $url) = explode("|", $val);
+      $Project .= '<li> <a href="' . $url . '" target="_blank">' . $name . '</a></li>';
+    }
+  }
+  echo $Project ? $Project : '世间无限丹青手，一片伤心画不成。';
 }
 
 /**项目展示
