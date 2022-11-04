@@ -12,6 +12,14 @@ forked from [Seevil/cactus](https://github.com/Seevil/cactus)
 
 ### 修改
 
+**2022.11.04**
+
+- 修改加密文章标题可见
+
+  修改网站文件：`var/Widget/Abstract/Contents.php`，`$value['title'] = _t('此内容被密码保护');` 替换为 `$value['title'] = '[加密] ' . $value['title'];`
+
+- 修改文章页细节
+
 **2022.07.25**
 
 - 模板设置中新增自定义导航

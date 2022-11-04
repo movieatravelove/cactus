@@ -148,8 +148,9 @@ $this->need('header.php');
         </header>
         <div class="content" itemprop="articleBody" id="post-content">
           <?php parseContent($this); ?>
-          <h2>本文链接：</h2>
-          <a href="<?php $this->permalink() ?>" target="_blank"><?php $this->permalink() ?></a>
+          <p style="margin-top:80px">本文链接：
+            <a href="<?php $this->permalink() ?>" target="_blank"><?php $this->permalink() ?></a>
+          </p>
         </div>
       </article>
       <?php $this->need('comments.php'); ?>
