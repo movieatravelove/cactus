@@ -68,3 +68,33 @@ forked from [Seevil/cactus](https://github.com/Seevil/cactus)
 - 增加 `分类` 模板
 
   用法：新建独立页面，自定义模板选择 `分类`
+
+
+
+## 设置
+```
+logo: https://oss.jianz.xyz/blog/logo/logo.png
+github: https://github.com/movieatravelove
+gitee: https://gitee.com/march21sunny
+备案号： 陕ICP备2021010762号
+文章置顶：66 58
+
+projects:
+网站导航 | http://nav.jianz.xyz/ | 收集常用、有趣、好玩的网站
+时光相册 | http://photo.jianz.xyz/ | 生活相册记录
+每日提醒 | https://github.com/movieatravelove| 每天定时发送一封暖心小邮件
+springboot-module-demo| https://github.com/movieatravelove/springboot-module-demo | SpringBoot 多模块工程 Demo 
+
+自定义导航：
+Nav | http://nav.jianz.xyz/ 
+Photo | http://photo.jianz.xyz/  
+
+运行时间：2020-09-01 08:08:08
+.SiteRunningTime{
+    line-height: 25px;
+    padding-bottom: 2rem;
+}
+
+
+
+```
